@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.topBar {
+    position: absolute;
+    width: 70%;
+    height: 20px;
+    background-color: white;
+    color: black;
+    left: 1px;
+    align-items: center;
+}
+
+.store {
+    position: absolute;
+    width: 30%;
+    height: 20px;
+    background-color: #067655;
+    color: white;
+    right: 1px;
+    align-items: center;
+}
+
+
+

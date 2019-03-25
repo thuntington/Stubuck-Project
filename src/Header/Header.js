@@ -7,7 +7,6 @@ const Header = () => {
       <div> 
         <TopBar />
         <NavBar />
-        <img alt='logo' src='' /> 
       </div> 
     );
   }
