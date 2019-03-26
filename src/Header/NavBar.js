@@ -3,6 +3,7 @@ import './navBar.css';
 import logo from './stubucks-logo.png'
 
 const NavBar = () => {
+
     return (
       <div className="navBar">
        <img className='logo' alt='logo' src= {logo}  />  

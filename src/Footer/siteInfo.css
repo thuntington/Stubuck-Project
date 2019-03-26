@@ -1,0 +1,25 @@
+.siteInfo {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 40%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.siteInfo ul {
+    list-style: none;
+}
+
+.terms {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.address {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+

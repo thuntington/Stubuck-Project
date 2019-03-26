@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Footer {
+    background-color: #E7E7E7;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.Footer ul {
+    list-style: none;
+}
+
+.Footer h2 {
+    margin-bottom: 10px;
+}
+
+.topRow {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.help, .compInfo, .share, .about {
+   margin-top: 30px;
+   text-align: left;  
+}
+
+.about {
+    margin-left: 225px;
+    
+}
+
+.share img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
