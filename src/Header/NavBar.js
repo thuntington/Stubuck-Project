@@ -6,11 +6,12 @@ class NavBar extends Component {
   constructor() {
     super();
     this.state = {
-      scrolled: true,
+      scrolled: false,
+      checked: false,
     };
   }
 
-  componentDidMount() {
+  componentDidMount() { //detects to see if scrolling is true
     window.addEventListener('scroll', () => {
       const isTop = window.scrollY < 100;
       if (isTop !== true) {
@@ -21,15 +22,35 @@ class NavBar extends Component {
     })
   }
 
+  isCheckboxChecked = () => {
+    window.addEventListener('click', () => {
+        console.log('Menu has been clicked')
+        this.setState({ checked: true })
+      })
+    }
+  isCheckboxUnchecked = () => {
+    window.addEventListener('click', () => {
+      console.log('Menu has been CLOSED')
+      this.setState({ checked: false })
+    })
+  }  
+  
+
   // componentWillMount() {
   //   window.removeEventListener('scroll');
   // }
 
   render() {
     return (
-      <div className={this.state.scrolled ? 'nav scrolled' : 'nav'}>
-       <img className='logo' alt='logo' src= {logo}  />  
-      <ul className="nav">
+      <div className='navBar'>
+        <img className='logo' alt='logo' src= {logo}  />
+       
+       <div className='mobNav'>
+        <label className='ham' htmlFor="toggle">&#9776;</label>
+        <input className="toggle1" type="checkbox" />
+      </div>
+  
+        <ul className={this.state.scrolled ? 'nav scrolled' : 'nav'}>
                 <li>Coffee</li>
                 <li>Tea</li>
                 <li>Menu</li>
@@ -37,7 +58,7 @@ class NavBar extends Component {
                 <li>Want to join our team?</li>
                 <li>Location</li>
                 <li>Specials</li>
-              </ul>
+        </ul>
       </div>
     );
   }

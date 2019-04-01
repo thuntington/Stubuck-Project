@@ -4,6 +4,7 @@
     margin-bottom: 30px;
     height: 70px;
     align-items: center;
+    background-color: black;
 }
 
 .nav {
@@ -22,7 +23,7 @@
     color: white;
     padding-left: 110px;
     padding-right: 120px;
-    transition: 0.25s;
+    transition: 0.1s;
     z-index: 99;
 }
 
@@ -40,23 +41,69 @@
     background-color: black;
     opacity: 0.8;
     top: -1px;
-    transition: 0.25s;
+    transition: 0.1s;
 }
 
-
-/* .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 70px;
-    align-items: center;
+.mobNav {
+    position: absolute;
+    left: 20px;
+    z-index: 200;
+    display: none;
 }
-.nav {
-    display: flex;
-    margin-right: 30px;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin: 0; 
-    margin-left: 40px;
-} */
 
+.ham {
+    height: 100px;
+    width: 100px;
+    top: 20px;
+    z-index: 201;
+}
+
+input {
+   display: none; 
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navBar {
+       
+       height: 30%;
+       margin-bottom: 0;
+       
+    }
+    
+    .nav {
+        display: none;
+        
+    }
+    .logo {
+        position: relative;
+        height: 60px;
+        width: 60px;
+        left: 300px;
+    }
+    .mobNav {
+        display: block;
+        color: white;
+        top: 24px;
+        cursor: pointer;
+    }
+
+    .toggle1:checked + .nav {
+        display: block;
+    }
+
+    input {
+        display: block;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

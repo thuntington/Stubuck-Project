@@ -2,6 +2,7 @@ import React from 'react';
 import bckground from './StubucksHero.jpg';
 import coffImg from './StubrewIcedCoffee.png';
 import Shop from './Shop';
+import { Link } from 'react-router-dom';
 import './body.css';
 
 const Body = () => {
@@ -11,9 +12,10 @@ const Body = () => {
         <img className='coffBack' alt='coffeeImg' src={bckground} />
         
         <div className='imgText'>
-          <span className='love'><p>Love</p>your Stu</span>
+          <span className='love'><span>Love</span>your Stu</span>
           <p className='range'>Look at our range and choose the Stu that suits you.</p>
-          <button className='chooseCoff'>Choose your coffee</button>
+          <button className='chooseCoff'><Link to="/orders">Choose your coffee</Link></button>
+          
         </div>
         </div>
         <div className='someNew'>Try something<p>new</p>?</div>

@@ -1,19 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './Header/Header';
-import Body from './Body/Body';
-import Footer from './Footer/Footer';
-import SiteInfo from './Footer/SiteInfo';
+import HomePage from './Pages/HomePage';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect
+} from "react-router-dom";
+
+//Pages
+import NotFound from './Pages/404';
+import Orders from './Pages/Order';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Body />
-        <Footer />
-        <SiteInfo />
-      </div>
+        <Router>
+        <Switch>
+          <Route exact path="/" component={HomePage}/>
+          <Route exact path="/404" component={NotFound} />
+          <Route exact path="/orders" component={Orders} />
+          <Redirect to="/404" />
+        </Switch>
+      </Router> 
     );
   }
 }
