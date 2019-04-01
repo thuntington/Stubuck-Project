@@ -20,12 +20,21 @@
     border-right: 1px solid #ddd;
     padding: 6px;
     padding-left: 20px;
+    margin: auto;
+    background-color: #fff;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.select-box-items div:hover {
+    background-color: #ddd;
 }
 
 .select-box-box {
-    width: 100%;
     position: relative;
-    left: 0;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .select-box-arrow {
@@ -38,6 +47,7 @@
     padding: 0;
     display: inline-block;
     background: #aaa;
+    cursor: pointer;
 }
 
 .select-box-arrow-down {

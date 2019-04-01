@@ -1,3 +1,20 @@
 .orderForm {
     text-align: center;
+    align-content: center;
+}
+
+button {
+    position: relative;
+    top: 25px;
+    height: 30px;
+    width: 200px;
+    background-color: #067655;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #067655;
+    cursor: pointer;
+}
+
+button:focus {
+    outline:0;
 }
