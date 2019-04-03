@@ -42,7 +42,7 @@ const Order = () => {
             <option value="vanilla">vanilla</option>
           </select>
         </label>
-        <input className='button' type='submit' ></input>
+        <input className='button' type='submit'></input>
         </form>
                 {/* <SelectBox
                     items={[
