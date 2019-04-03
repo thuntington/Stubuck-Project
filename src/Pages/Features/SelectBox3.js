@@ -1,7 +1,7 @@
 import React from 'react';
 import './selectBox.css';
 
-class SelectBox extends React.Component {
+class SelectBoxFlavour extends React.Component {
     state = {
         items: this.props.items || [],
         showItems: false,
@@ -24,7 +24,7 @@ class SelectBox extends React.Component {
             <form className='select-box-box' action='/createCoffee' method='POST' >
                 <div className='select-box-container'>
                     <div className='select-box-selected-item'> {this.state.selectedItem.value}
-                        <input name='coffee' value={this.state.selectedItem.value} />
+                        <input name='flavour' value={this.state.selectedItem.value} />
                 </div>
                 <div className='select-box-arrow'
                      onClick={this.dropDown}
@@ -50,4 +50,4 @@ class SelectBox extends React.Component {
     }
 }
 
-export default SelectBox;
+export default SelectBoxFlavour;

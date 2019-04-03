@@ -18,3 +18,23 @@ button {
 button:focus {
     outline:0;
 }
+
+.confirm {
+    display: block;
+    position: relative;
+    top: 25px;
+    height: 30px;
+    width: 200px;
+    background-color: #067655;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #067655;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 50;
+}
+
+.confirm:focus {
+    outline:0;
+}
