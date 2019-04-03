@@ -11,8 +11,8 @@ const Order = () => {
     return (
         <div className='orderForm'>
             <Header/>
-            <form action='/createCoffee' method='POST'>
-                <h2>Choose your Coffee</h2>
+            <form className='form-container' action='/createCoffee' method='POST'>
+                <h2>Your Stubucks Order</h2>
         <label>
           Pick your coffee:
           <select name='coffee'>
