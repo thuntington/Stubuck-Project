@@ -38,3 +38,7 @@ button:focus {
 .confirm:focus {
     outline:0;
 }
+
+.button {
+    display: block;
+}
