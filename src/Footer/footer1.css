@@ -10,6 +10,14 @@
     padding-bottom: 30px;
 }
 
+.Footer li {
+    cursor: pointer;
+}
+
+.Footer li:hover {
+    color: #2f2f2f;
+}
+
 .Footer ul {
     list-style: none;
 }
@@ -29,7 +37,7 @@
 }
 
 .about {
-    margin-left: 225px;
+    margin-left: 214px;
     
 }
 
@@ -37,4 +45,10 @@
     height: 40px;
     width: 40px;
     margin-right: 10px;
+    cursor: pointer;
+}
+
+.share img:hover{
+    filter: opacity(.5);
+    transition: .3s ease-in-out;
 }

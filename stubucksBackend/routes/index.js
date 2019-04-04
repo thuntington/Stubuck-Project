@@ -7,7 +7,8 @@ router.post('/createCoffee', (req, res, next) => {
   console.log(req.body.coffee);
   console.log(req.body.sugar);
   console.log(req.body.flavour);
-const newOrder = new Order();
+
+  const newOrder = new Order();
 
   newOrder.coffee = req.body.coffee;
   newOrder.sugar = req.body.sugar;

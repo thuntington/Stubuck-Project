@@ -78,5 +78,7 @@ button:focus {
 }
 
 .button:active {
+    height: 40px;
     width: 210px;
+    transition: 0.3s;
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './navBar.css';
-import logo from './stubucks-logo.png'
+import logo from './stubucks-logo.png';
+import { Link } from 'react-router-dom';
 
 class NavBar extends Component {
   constructor() {
@@ -43,7 +44,7 @@ class NavBar extends Component {
   render() {
     return (
       <div className='navBar'>
-        <img className='logo' alt='logo' src= {logo}  />
+        <Link to="/"><img className='logo' alt='logo' src= {logo} /></Link>
        
        <div className='mobNav'>
         <label className='ham' htmlFor="toggle">&#9776;</label>

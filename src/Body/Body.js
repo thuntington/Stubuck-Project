@@ -14,7 +14,7 @@ const Body = () => {
         <div className='imgText'>
           <span className='love'><span>Love</span>your Stu</span>
           <p className='range'>Look at our range and choose the Stu that suits you.</p>
-          <button className='chooseCoff'><Link to="/orders">Choose your coffee</Link></button>
+          <button className='chooseCoff'><Link style={{ textDecoration: 'none', color: 'white' }}to="/orders">Choose your coffee</Link></button>
           
         </div>
         </div>
